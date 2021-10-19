@@ -1,0 +1,62 @@
+<meta charset = "UTF-8">
+
+<input>
+<br><br>
+<button>Compare com o meu Segredo</button>
+
+<script>
+	function sorteia () {
+		return Math.round(Math.random() *10);
+	}
+	function sorteiaLength (quantidade) {
+		let segredos = [];
+		let tamanho = 0;
+		while(tamanho < quantidade) {	
+			let numeroAleatorio = sorteia();
+			if (numeroAleatorio !== 0) {
+				let achou = false;
+				for (let posicao = 0; posicao < segredos.length; posicao++) {	
+					if (segredos[posicao] == numeroAleatorio){
+					achou = true;
+					break;
+					}
+				}
+				if (achou == false) {
+				segredos.push(numeroAleatorio);
+				tamanho++;
+				}
+			}	
+		}
+
+		return segredos;
+	}
+
+
+	let segredos = sorteiaLength (3);
+
+	let input = document.querySelector("input");
+	input.focus();
+
+	let achouValor = false;
+
+	function verifica() {
+		for(let posicao = 0; posicao < segredos.length; posicao++) {
+			if (input.value == segredos[posicao]) {
+			alert("Você ACERTOU!");
+			achouValor = true;
+			break;
+			} 
+		}
+
+		if (achouValor == false) {
+			alert("Você ERROU!");
+		}
+
+		input.value = "";
+		input.focus();
+	}
+	
+	let button = document.querySelector("button");
+	button.onclick = verifica();
+
+</script>
