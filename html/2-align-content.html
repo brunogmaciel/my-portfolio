@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos do Align Content</title>
+
+    <style>
+
+        h4 {
+            text-align: left;
+        }
+
+        .container {
+            height: 400px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid black;
+        }
+
+        .item {
+            background-color: orange;
+            padding: 0 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            margin: 5px;
+        }
+
+        .stretch {
+
+            align-content: stretch;
+        }
+
+        .center {
+            align-content: center;
+        }
+
+        .flex-start {
+            align-content: flex-start;
+        }
+
+        .flex-end {
+            align-content: flex-end;
+        }
+
+        .space-around {
+            align-content: space-around;
+        }
+        .space-between {
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h4>STRECTCH</h4>
+    <div class="container stretch">
+        <div class="item">Lorem Ipsum</div>
+        <div class="item">Ipsum Fatesrs</div>
+        <div class="item">Lorem ipsum iud9iafdjig</div>
+        <div class="item">Lorem ipsm iajdgiagkaogkad iahdguajgi adghjgia ua ggaji au uhafudhu audfhuh u uahf uhaduf uad fhuahfu  auhfuadfuhdfuhad</div>
+        <div class="item">Lorem Ipsum Fasters Rapid</div>
+        <div class="item">Lorem Ipsum Fasters Rapid</div>
+        <div class="item">Lorem Ipsum Fasters Rapid</div>
+    </div>
+
+    <h4>center</h4>
+    <div class="container center">
+        <div class="item">Lorem Ipsum</div>
+        <div class="item">Ipsum Fatesrs</div>
+        <div class="item">Lorem ipsum iud9iafdjig</div>
+        <div class="item">Lorem ipsm iajdgiagkaogkad iahdguajgi adghjgia ua ggaji au uhafudhu audfhuh u uahf uhaduf uad fhuahfu  auhfuadfuhdfuhad</div>
+        <div class="item">Lorem Ipsum Fasters Rapid</div>
+        <div class="item">Lorem Ipsum Fasters Rapid</div>
+        <div class="item">Lorem Ipsum Fasters Rapid</div>
+    </div>
+
+    <h4>flex-start</h4>
+    <div class="container flex-start">
+        <div class="item">Lorem Ipsum</div>
+        <div class="item">Ipsum Fatesrs</div>
+        <div class="item">Lorem ipsum iud9iafdjig</div>
+        <div class="item">Lorem ipsm iajdgiagkaogkad iahdguajgi adghjgia ua ggaji au uhafudhu audfhuh u uahf uhaduf uad fhuahfu  auhfuadfuhdfuhad</div>
+        <div class="item">Lorem Ipsum Fasters Rapid</div>
+        <div class="item">Lorem Ipsum Fasters Rapid</div>
+        <div class="item">Lorem Ipsum Fasters Rapid</div>
+    </div>
+
+    <h4>flex-end</h4>
+    <div class="container flex-end">
+        <div class="item">Lorem Ipsum</div>
+        <div class="item">Ipsum Fatesrs</div>
+        <div class="item">Lorem ipsum iud9iafdjig</div>
+        <div class="item">Lorem ipsm iajdgiagkaogkad iahdguajgi adghjgia ua ggaji au uhafudhu audfhuh u uahf uhaduf uad fhuahfu  auhfuadfuhdfuhad</div>
+        <div class="item">Lorem Ipsum Fasters Rapid</div>
+        <div class="item">Lorem Ipsum Fasters Rapid</div>
+        <div class="item">Lorem Ipsum Fasters Rapid</div>
+    </div>
+
+    <h4>space around</h4>
+    <div class="container space-around">
+        <div class="item">Lorem Ipsum</div>
+        <div class="item">Ipsum Fatesrs</div>
+        <div class="item">Lorem ipsum iud9iafdjig</div>
+        <div class="item">Lorem ipsm iajdgiagkaogkad iahdguajgi adghjgia ua ggaji au uhafudhu audfhuh u uahf uhaduf uad fhuahfu  auhfuadfuhdfuhad</div>
+        <div class="item">Lorem Ipsum Fasters Rapid</div>
+        <div class="item">Lorem Ipsum Fasters Rapid</div>
+        <div class="item">Lorem Ipsum Fasters Rapid</div>
+    </div>
+
+    <h4>space between</h4>
+    <div class="container space-between">
+        <div class="item">Lorem Ipsum</div>
+        <div class="item">Ipsum Fatesrs</div>
+        <div class="item">Lorem ipsum iud9iafdjig</div>
+        <div class="item">Lorem ipsm iajdgiagkaogkad iahdguajgi adghjgia ua ggaji au uhafudhu audfhuh u uahf uhaduf uad fhuahfu  auhfuadfuhdfuhad</div>
+        <div class="item">Lorem Ipsum Fasters Rapid</div>
+        <div class="item">Lorem Ipsum Fasters Rapid</div>
+        <div class="item">Lorem Ipsum Fasters Rapid</div>
+    </div>
+</body>
+</html>l
