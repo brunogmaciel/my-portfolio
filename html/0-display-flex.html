@@ -1,77 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex Wrap - Prática</title>
+
+    <title>Fundamentos: justify-content</title>
 
     <style>
         .flex-container {
+            max-width: 500px;
             display: flex;
-            height: 150px;
-            border: 2px solid black;
-            max-width: 300px;
-        }
-
-        .itens {
-            font-size: 24px;
-            height: 50%;
-            text-align: center;
-            min-width: 100px;
             line-height: 50px;
+            padding: 0;
+            margin: 0;
+
         }
 
-        .no-wrap {
-            flex-wrap: nowrap;
+        .item {
+            
         }
 
-        .wrap {
-            flex-wrap: wrap;
-        }
-
-        .wrap-reverse {
-            flex-wrap: wrap-reverse;
-        }
-
-        .blue {
-            background-color: blue;
-        }
-
-        .orange {
-            background-color: orangered;
-        }
-
-        .green {
-            background-color: lightgreen;
-        }
     </style>
+
 </head>
 <body>
-    <h1>No Wrap</h1>
+    <h1></h1>
+    
     <div class="flex-container">
-        <div class="itens blue">1</div>
-        <div class="itens orange">2</div>
-        <div class="itens green">3</div>
-        <div class="itens orange">4</div>
-    </div>    
 
-    <h1>Wrap</h1>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
 
-    <div class="flex-container wrap">
-        <div class="itens orange">1</div>
-        <div class="itens green">2</div>
-        <div class="itens blue">3</div>
-        <div class="itens orange">4</div>
     </div>
 
-
-    <h1>Reverse Wrap</h1>
-    <div class="flex-container">
-        <div class="itens orange">1</div>
-        <div class="itens green">2</div>
-        <div class="itens blue">3</div>
-        <div class="itens orange">4</div>
-    </div>
 </body>
 </html>
