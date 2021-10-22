@@ -10,9 +10,12 @@
     box-sizing: border-box;
 }
 
+/*ELEMENTOS BASE*/
+
 body {
     background: var(--preta);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 header .container {
@@ -36,4 +39,27 @@ header nav a {
 
 header nav a:hover{
     color: #fff;
+}
+
+/*FILME PRINCIPAL*/
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url(/myportfolio/projeto-netflix/resources/capa-house.jpg);
+    background-size: cover;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .titulo {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
 }
